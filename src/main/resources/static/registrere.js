@@ -19,6 +19,6 @@ function søk() {
         $.post("/lagre", kunde, function () {
             hentAlle();
         });
-        window.location.href = "/"
+        window.location.href ="/"
     }
 }
