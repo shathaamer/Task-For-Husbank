@@ -26,7 +26,8 @@ public class KundeRepository {
 
     public Kunde henteEnkunde(int id){
         String sql="SELECT * FROM Kunde WHERE id=?";
-        List<Kunde> enkunde= db.query(sql,new BeanPropertyRowMapper(Kunde.class),id);
+        List<Kunde> enkunde= db.query(sql
+                ,new BeanPropertyRowMapper(Kunde.class),id);
         return enkunde.get(0);
     }
 
