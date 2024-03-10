@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <meta charset="UTF-8">
+    <title>LåneSøknad</title>
+</head>
+<body>
+<div class="container">
+    <h1>LåneSøknad Husbank</h1>
+    <div class="row">
+        <div class="col-md-4">
+            <form action="form">
+                <div class="form-group">
+                    <label for="personnr">Personnr</label>
+                    <input type="text" class="form-control" id="personnr"/>
+                </div>
+                <div class="form-group">
+                    <label for="navn">Navn</label>
+                    <input type="text" class="form-control" id="navn"/>
+                </div>
+
+                <div class="form-group">
+                    <label for="adresse">Adresse</label>
+                    <input type="text" class="form-control" id="adresse"/>
+                </div>
+
+                <div class="form-group">
+                    <label for="grunn">Grunnen til lån</label>
+                    <input type="text" class="form-control" id="grunn"/>
+                </div>
+                <div class="form-group">
+                    <label for="laanebelop">Lånebeløp</label>
+                    <input type="text" class="form-control" id="laanebelop"/>
+                </div>
+                <div class="form-group">
+                    <label for="mobil">Mobil</label>
+                    <input type="text"  class="form-control" id="mobil"/>
+                </div>
+            </form>
+            <button class="btn btn-primary" onclick="søk()">Send Søknad</button>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
+<script src="registrere.js"></script>
+</body>
+</html>
