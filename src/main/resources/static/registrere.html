@@ -15,28 +15,34 @@
                 <div class="form-group">
                     <label for="personnr">Personnr</label>
                     <input type="text" class="form-control" id="personnr"/>
+                    <span id="feilpersonnummer" style="color: red"></span>
                 </div>
                 <div class="form-group">
                     <label for="navn">Navn</label>
                     <input type="text" class="form-control" id="navn"/>
+                    <span id="feilnavn" style="color: red"></span>
                 </div>
 
                 <div class="form-group">
                     <label for="adresse">Adresse</label>
                     <input type="text" class="form-control" id="adresse"/>
+                    <span id="feiladresse" style="color: red"></span>
                 </div>
 
                 <div class="form-group">
                     <label for="grunn">Grunnen til lån</label>
                     <input type="text" class="form-control" id="grunn"/>
+                    <span id="feilgrunn" style="color: red"></span>
                 </div>
                 <div class="form-group">
                     <label for="laanebelop">Lånebeløp</label>
                     <input type="text" class="form-control" id="laanebelop"/>
+                    <span id="feillaanebelop" style="color: red"></span>
                 </div>
                 <div class="form-group">
                     <label for="mobil">Mobil</label>
                     <input type="text"  class="form-control" id="mobil"/>
+                    <span id="feilmobil" style="color: red"></span>
                 </div>
             </form>
             <button class="btn btn-primary" onclick="søk()">Send Søknad</button>
@@ -47,5 +53,6 @@
 </body>
 </html>
 <script src="registrere.js"></script>
+<script src="validering.js"></script>
 </body>
 </html>
