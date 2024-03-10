@@ -15,10 +15,13 @@ public class KundeRepository {
         String sql = "INSERT INTO Kunde (personnr,navn,adresse,laanebelop,grunn,mobil) VALUES(?,?,?,?,?,?)";
         db.update(sql,kunde.getPersonnr(),kunde.getNavn(),kunde.getAdresse(),kunde.getLaanebelop(),kunde.getGrunn(),kunde.getMobil());
     }
-    public List<Kunde> hentAlle(){
+
+    public List<Kunde> hentAlle() {
         String sql = "SELECT * FROM Kunde";
         return db.query(sql, new BeanPropertyRowMapper(Kunde.class));
+
     }
+    
 
 
     public Kunde henteEnkunde(int id){
